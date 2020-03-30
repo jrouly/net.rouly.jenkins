@@ -1,7 +1,7 @@
 def call(String args) {
   sh """
-    sbt -Dsbt.global.base=\$HOME/.sbt \
-      -Dsbt.boot.directory=\$HOME/.sbt \
+    sbt -Dsbt.global.base=/.sbt \
+      -Dsbt.boot.directory=\$(mktemp -d) \
       -Dsbt.ivy.home=.ivy2 \
       $args
   """
