@@ -1,0 +1,7 @@
+sbt invocation script.
+Sets certain command line properties by default.
+
+See: https://www.scala-sbt.org/1.x/docs/Command-Line-Reference.html#Command+Line+Options
+
+Sets the global .sbt directory to /.sbt.
+Uses the workspace local .sbt and .ivy directories for everything else.
